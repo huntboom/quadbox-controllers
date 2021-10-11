@@ -1,0 +1,49 @@
+Overview: To make a drone parts planner site inspired in part by PC parts planner but also rendered in 3d using React One Three Fiber (React and Three.js)
+
+Components:Header
+
+Have orbit controls tied to a prebuilt model that rotates on the left of the screen, you scroll down and it rotates and there is a description of the site as you scroll 
+The description or body says WELCOME and as you scroll down the welcome fades out. The body contains instructions on how to build the site and 
+at the bottom of the body there is a button that says GET STARTED with a blinking Black arrow above it pointing at the bottom. The arrow only starts to blink when you reach the bottom of the description
+
+Has an estimated cost counter at the top right of the build
+
+LANDING PAGE:
+imports
+        Orbit Controls, React Three Drei, React, React Three Fiber
+
+<Header>
+    <Navigation Bar>
+<Header/>
+<Body> 
+    <BuiltModel/>
+    <p> 
+        Step One: Choose your frame 
+        Step Two: Pick your Flight Controller
+        Step Three: Choose your motor
+            (When picking the motor it zooms in on the frame location where the motor would be and stops the auto rotate)
+        Step Four: Props; Bi-blade, Tri-blade, Quad etc and Color 
+        Step Five: Accessorize. Choose Racing fins, Go Pro mounts, motor guards, colors, LEDs
+    <p/>
+<Body/>
+<button src=linkToleavePage>Get Started<button>
+<Footer>
+    <p>Created By Hunter Karsseboom<p>
+    <Button src=GithubImage>Github<Button>
+    <Button src=LinkedIn><Button>
+    <button src=profile site>About Me <button>
+<Footer/>
+
+
+Steps:Test to see how easy it is for you to import a drone frame into the website
+Follow along to this tutorial: https://youtu.be/Qs9A3XIjbg4
+To see how to import a model into your website. Store each model in their own component file
+Create a fully built model to use as the rotating background. Tie orbit Controls to scrolling down.
+
+Step 1: Add gltf files to public folder. CHECK
+Step 2: Learn how to position the camera and object so that I can see it.
+
+Okay so I imported Orbit controls which helps me move my object
+I can try and figure out where exactly the object positions on the canvas by default and the canvas size.
+Figure out how to use padding to position the canvas lower on the page.
+useHelpers like CameraHelper
