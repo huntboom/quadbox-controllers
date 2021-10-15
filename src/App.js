@@ -6,9 +6,16 @@ import { Suspense } from 'react'
 import { Html,OrbitControls } from '@react-three/drei'
 import { Light } from 'three';
 
+const Body = () => {
+    return(
+        <p className='instructions'>
+            Step One: Choose your frame.     </p>
+            );
+}
+
 const HTMLOutside = () => {
   return(
-    <h1>Outside Canvas</h1>
+      <h1 className='title'>Drone Parts Picker</h1>
   )
 };
 
@@ -41,6 +48,7 @@ function App() {
     <>
         <HTMLOutside/>  
         <Scene />
+        <Body/> 
     </>
   );
 };
