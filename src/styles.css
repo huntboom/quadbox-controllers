@@ -23,5 +23,8 @@
     place-items:center;
 
 }
+Button {
+    backgroundColor:pink;
+}
 
 

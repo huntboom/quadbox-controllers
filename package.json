@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.9",
+    "@mui/material": "^5.0.4",
     "@react-three/drei": "^7.13.1",
     "@react-three/fiber": "^7.0.10",
     "@testing-library/jest-dom": "^5.14.1",

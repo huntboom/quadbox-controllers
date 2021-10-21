@@ -5,17 +5,14 @@ import Model from './Model.js';
 import { Suspense } from 'react'
 import { Html,OrbitControls } from '@react-three/drei'
 import { Light } from 'three';
-
-const Body = () => {
-    return(
-        <p className='instructions'>
-            Step One: Choose your frame.     </p>
-            );
-}
+import Bottom_Plate_3_Inch from './Bottom_Plate_3_Inch.js';
+import Body from './Body.js';
 
 const HTMLOutside = () => {
   return(
-      <h1 className='title'>Drone Parts Picker</h1>
+      <div>
+          <h1 className='title'>Drone Parts Picker</h1>
+        </div>
   )
 };
 
@@ -34,8 +31,7 @@ const Scene = () => {
       <Suspense fallback={null}>
      <pointLight intensity={1.12} position={[0, 50, 100]} />
           <OrbitControls/>
-   <Model/>
-    
+          <Bottom_Plate_3_Inch/>
       </Suspense>
       
    /
