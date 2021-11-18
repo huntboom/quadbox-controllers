@@ -1,7 +1,6 @@
-
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-
+import Body from './Body.js' 
 /*function colorSwapper() {
     return(
         <div>
@@ -13,7 +12,7 @@ import { useGLTF } from '@react-three/drei'
     );
 };*/
 
-export default function Bottom_Plate_3_Inch(props) {
+export default function Bottom_Plate_3_Inch(withstring) {
   const { nodes, materials } = useGLTF('/Bottom_Plate_3_Inch.gltf')
   return (
         <mesh geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} >
@@ -22,6 +21,7 @@ export default function Bottom_Plate_3_Inch(props) {
               color="green"
           />
         </mesh>
+
   )
 }
 

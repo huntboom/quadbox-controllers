@@ -5,8 +5,11 @@ import Model from './Model.js';
 import { Suspense } from 'react'
 import { Html,OrbitControls } from '@react-three/drei'
 import { Light } from 'three';
+import Button from '@mui/material/Button';
 import Bottom_Plate_3_Inch from './Bottom_Plate_3_Inch.js';
 import Body from './Body.js';
+import Test from './Test.js';
+
 
 const HTMLOutside = () => {
   return(
@@ -45,6 +48,7 @@ function App() {
         <HTMLOutside/>  
         <Scene />
         <Body/> 
+        <Test/>
     </>
   );
 };

@@ -47,3 +47,8 @@ Okay so I imported Orbit controls which helps me move my object
 I can try and figure out where exactly the object positions on the canvas by default and the canvas size.
 Figure out how to use padding to position the canvas lower on the page.
 useHelpers like CameraHelper
+
+Add cards to click on for prebuilt models and then have a build your own model below it.
+"Already know exactly what parts you would like? See our parts prices list." 
+
+Have a component built that shows the final price with the prices of each piece listed above it. Like a receipt. 
