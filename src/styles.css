@@ -12,10 +12,15 @@
     background-color: #030B16;
 }
 .title {
-    color: pink;
+    color:black;
+    padding:20px;
+    display:flex;
+    background-color:#FF3B3F;
+    font: fantasy;
+}
+.title > img {
+    height:40px;
     padding:10px;
-    display:grid;
-    place-items:center;
 }
 .instructions {
     color:white;

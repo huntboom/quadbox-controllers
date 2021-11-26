@@ -8,13 +8,12 @@ import { Light } from 'three';
 import Button from '@mui/material/Button';
 import Bottom_Plate_3_Inch from './Bottom_Plate_3_Inch.js';
 import Body from './Body.js';
-import Test from './Test.js';
-
-
+import logo from './pngfind.com-drone-icon-png-6764602.png';
 const HTMLOutside = () => {
   return(
-      <div>
-          <h1 className='title'>Drone Parts Picker</h1>
+      <div className='title'>
+          <img src={logo} alt=""/>
+          <h1>Drone Parts Picker</h1>
         </div>
   )
 };
@@ -48,7 +47,6 @@ function App() {
         <HTMLOutside/>  
         <Scene />
         <Body/> 
-        <Test/>
     </>
   );
 };

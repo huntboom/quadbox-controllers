@@ -52,3 +52,7 @@ Add cards to click on for prebuilt models and then have a build your own model b
 "Already know exactly what parts you would like? See our parts prices list." 
 
 Have a component built that shows the final price with the prices of each piece listed above it. Like a receipt. 
+
+Okay so new plan, rather than having a landing page and several other pages, I'll start with one page to avoid having to use react router for now. 
+
+
