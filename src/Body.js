@@ -2,16 +2,16 @@ import React from "react";
 import Button from '@mui/material/Button';
 import { useState } from 'react';
 import create from 'zustand';
-import {useStore} from 'zustand';
+import {useStore} from './store.js';
 
 export default function Body() {
     const [frameColor,setColor] = useState("green");
     const side1color = useStore(state => state.color)
-    return(
+   return(
         <div className='instructions'> 
           <button className='ordernow'>ORDER NOW</button>
             <p className='instructions'>
-            Step One: Choose your frame.{side1color}
+            Step One: Choose your frame.
              </p>
             <select name="selectList" id="selectList" onChange={(e)=>{
                 const selectedColor=e.target.value;

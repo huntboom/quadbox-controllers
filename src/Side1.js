@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {frameColor} from './Body.js'
 import create from 'zustand';
-import useStore from './Body.js';
+import {useStore} from './store';
 export default function Side1(props,{frameColor}) {
   const { nodes, materials } = useGLTF('/side1.gltf')
   const shellcolor = useStore(state => state.color)

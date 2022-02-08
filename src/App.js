@@ -19,22 +19,23 @@ import Header from './header'
 import shoppingcartlogo from './shoppingcart.png';
 import menulogo from './menu-three-horizontal-lines-symbol-text-baseball-bat-team-sport-letter-transparent-png-2099785.png';
 const HTMLOutside = () => {
-    const shellcolor = useStore(state => state.color)
-
+    const changePink = useStore(state => state.changePink)
   return(
       <div className='all'>
           <div className='header'>
           <img className='menulogo' src={menulogo}/>
               <div className='Title'>
           <img className='headerimg' src={controllerlogo}/>
-          <h1 className='headertitle'>{shellcolor} QUADBOX CUSTOMS</h1>
+          <h1 className='headertitle'>QUADBOX CUSTOMS</h1>
               </div>
           <img className='shoppingcart' src={shoppingcartlogo}/>
     </div>
           <div className='body'>
               <h2 className='motto'>
+              
                   CUSTOMIZATION UNDER YOUR CONTROL
               </h2>
+              <button onClick={changePink} className='pinkbutton'></button>
           </div>
     </div>
       
