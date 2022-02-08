@@ -1,14 +1,17 @@
 import React from "react";
 import Button from '@mui/material/Button';
 import { useState } from 'react';
+import create from 'zustand';
+import {useStore} from 'zustand';
 
 export default function Body() {
     const [frameColor,setColor] = useState("green");
-    const testColor = 'green';
+    const side1color = useStore(state => state.color)
     return(
         <div className='instructions'> 
-        <p className='instructions'>
-            Step One: Choose your frame.
+          <button className='ordernow'>ORDER NOW</button>
+            <p className='instructions'>
+            Step One: Choose your frame.{side1color}
              </p>
             <select name="selectList" id="selectList" onChange={(e)=>{
                 const selectedColor=e.target.value;
@@ -22,7 +25,12 @@ export default function Body() {
             <p className='instructions'>
                 Step Two: Choose your flight controller
             </p>
-        <Button variant='contained'>GET STARTED</Button>
+        <Button style={{
+        borderRadius: 35,
+        backgroundColor: "#21b6ae",
+        padding: "18px 36px",
+        fontSize: "18px"
+    }} variant='contained'>GET STARTED</Button>
             {console.log({frameColor})}
             {frameColor}
    </div>

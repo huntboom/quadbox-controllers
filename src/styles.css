@@ -1,26 +1,51 @@
-* {
-    box-sizing: border-box;
-  }
   
   html,
   body,
   #root {
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #030B16;
 }
-.title {
-    color:black;
-    padding:20px;
+.header {
     display:flex;
-    background-color:#FF3B3F;
-    font: fantasy;
+    background-color:#45A29E;
+    height:5em;
+    justify-content:space-between;
 }
-.title > img {
-    height:40px;
-    padding:10px;
+.menulogo {
+    height:60px;
+    padding-left:40px;
+    padding-top:10px;
+}
+.Title {
+    display:flex;
+}
+    
+
+.shoppingcart {
+    height:60px;
+    padding-right:40px;
+    padding-top:10px;
+}
+.headertitle {
+    color:black;
+    padding:0px;
+    background-color:#45A29E;
+    font: sans-serif;
+    margin-top:20px;
+    padding-top:0px;
+    padding-left:20px;
+    justify-content:center;
+    font-size:2.5em;
+}
+.headerimg {
+    height:80px;
+    padding-left:10px;
+}
+.overlayed {
+    margin-top:30px;
 }
 .instructions {
     color:white;
@@ -28,8 +53,19 @@
     place-items:center;
 
 }
-Button {
-    backgroundColor:pink;
+.spacing {
+    padding-top:50px;
 }
+.body {
+    display:flex;
+    justify-content:center;
+    padding-top:0px;
+}
+.motto {
+    color:white;
+    font-size:50px;
+    font-family:"Open Sans",sans-serif;
+    font-weight:700;
 
+}
 
