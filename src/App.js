@@ -1,6 +1,7 @@
 import {Canvas} from '@react-three/fiber';
 import './styles.css';
 import './Model.js';
+import { Link } from "react-router-dom"; 
 import { useState } from 'react';
 import Button from '@mui/material/Button';
 import Side1 from './Side1.js';
@@ -20,6 +21,7 @@ import shoppingcartlogo from './shoppingcart.png';
 import menulogo from './menu-three-horizontal-lines-symbol-text-baseball-bat-team-sport-letter-transparent-png-2099785.png';
 const HTMLOutside = () => {
     const changePink = useStore(state => state.changePink)
+    const changeBlue= useStore(state => state.changeBlue)
   return(
       <div className='all'>
           <div className='header'>
@@ -31,11 +33,21 @@ const HTMLOutside = () => {
           <img className='shoppingcart' src={shoppingcartlogo}/>
     </div>
           <div className='body'>
+              <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem"
+        }}
+      >
+        <Link to="/shoppingcart">Shopping Cart</Link> |{" "}
+        <Link to="/customizer">Customizer</Link>
+      </nav>
               <h2 className='motto'>
               
                   CUSTOMIZATION UNDER YOUR CONTROL
               </h2>
               <button onClick={changePink} className='pinkbutton'></button>
+              <button onClick={changeBlue} className='bluebutton'></button>
           </div>
     </div>
       
@@ -68,9 +80,9 @@ const Scene = () => {
           <ambientLight intensity={0.5}/>
           
      <pointLight intensity={1.15} position={[0, 24, -100]} />
-          <OrbitControls/>
           <group position={[0, 0, 0]}>
           <HTMLInside/>
+          <OrbitControls/>
           <CenterClip position={[-70,0,0]}/>
           <Side1 position={[-70,0,0]}/>
           <Side2 position={[-70,0,0]}/>

@@ -8,7 +8,7 @@
     padding: 0;
     background-color: #030B16;
 }
-.pinkbutton {
+button {
   background-color: #FD788B; /* Green */
   border: none;
   color: white;
@@ -20,6 +20,9 @@
   height:80px;
   width:80px;
   font-size: 16px;
+}
+.bluebutton {
+  background-color:#6EB5FF;
 }
 .header {
     display:flex;
