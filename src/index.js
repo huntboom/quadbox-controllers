@@ -12,8 +12,9 @@ ReactDOM.render(
 <React.StrictMode>
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="customizer" element={<Customizer/>}/>
+            <Route path="/" element={<App/>}>
+              <Route path="customizer" element={<Customizer/>}/>
+            </Route>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

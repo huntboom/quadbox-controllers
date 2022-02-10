@@ -1,7 +1,7 @@
 import {Canvas} from '@react-three/fiber';
 import './styles.css';
 import './Model.js';
-import { Link } from "react-router-dom"; 
+import { Link,Outlet } from "react-router-dom"; 
 import { useState } from 'react';
 import Button from '@mui/material/Button';
 import Side1 from './Side1.js';
@@ -119,7 +119,8 @@ const Scene = () => {
 function App() {
   return(
     <>
-        <HTMLOutside/>  
+        <HTMLOutside/>
+        <Outlet/>
         <Scene />
         <Body/>
         <BearCounter/>
