@@ -1,6 +1,5 @@
 import {Canvas} from '@react-three/fiber';
 import './styles.css';
-import './Model.js';
 import { Link,Outlet } from "react-router-dom"; 
 import { useState } from 'react';
 import Button from '@mui/material/Button';
@@ -14,25 +13,16 @@ import { Html,OrbitControls} from '@react-three/drei'
 import { Light } from 'three';
 import Body from './Body.js';
 import controllerlogo from './controllerupgrade.png';
-import {BearCounter,Controls} from './bearcounter.js';
 import {useStore} from './store.js';
-import Header from './header'
 import shoppingcartlogo from './shoppingcart.png';
 import menulogo from './menu-three-horizontal-lines-symbol-text-baseball-bat-team-sport-letter-transparent-png-2099785.png';
-const HTMLOutside = () => {
+import Header from './Header.js'
+const HTMLOutside = ({Header}) => {
     const changePink = useStore(state => state.changePink)
     const changeBlue= useStore(state => state.changeBlue)
   return(
-      <div className='all'>
-          <div className='header'>
-          <img className='menulogo' src={menulogo}/>
-              <div className='Title'>
-          <img className='headerimg' src={controllerlogo}/>
-          <h1 className='headertitle'>QUADBOX CUSTOMS</h1>
-              </div>
-          <img className='shoppingcart' src={shoppingcartlogo}/>
-    </div>
-          <div className='body'>
+      <div>
+         <div className='body'>
               <nav
         style={{
           borderBottom: "solid 1px",
@@ -49,8 +39,7 @@ const HTMLOutside = () => {
               <button onClick={changePink} className='pinkbutton'></button>
               <button onClick={changeBlue} className='bluebutton'></button>
           </div>
-    </div>
-      
+      </div>
   )
 
 };
@@ -119,12 +108,10 @@ const Scene = () => {
 function App() {
   return(
     <>
+        <Header/>
         <HTMLOutside/>
-        <Outlet/>
         <Scene />
         <Body/>
-        <BearCounter/>
-        <Controls/>
     </>
   );
 };
