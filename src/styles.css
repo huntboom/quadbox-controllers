@@ -8,6 +8,52 @@
     padding: 0;
     background-color: #030B16;
 }
+.shellColor {
+    display:flex;
+}
+.orangebutton {
+    background-color:orange;
+}
+.bluebutton {
+  background-color:#6EB5FF;  }
+.greenbutton {
+  background-color:lightgreen  
+}
+.yellowbutton {
+
+}
+.whitebutton {
+    background-color:white;
+}
+.redbutton {
+  background-color:red;
+}
+.purplebutton {
+    
+}
+
+.pinkbutton {
+ 
+}
+#colorbuttons {
+    padding:2em;   
+    margin:1em;
+}
+.canvas {
+    width:50em;
+    margin-top:8em;
+    height:25em;
+
+}
+
+.partselecter {
+    color:white;
+    margin-top:2em;
+    margin-left:2em;
+    width:40%;
+}
+
+
 button {
   background-color: #FD788B; /* Green */
   border: none;
@@ -21,9 +67,7 @@ button {
   width:80px;
   font-size: 16px;
 }
-.bluebutton {
-  background-color:#6EB5FF;
-}
+
 .header {
     display:flex;
     background-color:#45A29E;

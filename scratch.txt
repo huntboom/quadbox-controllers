@@ -1,0 +1,16 @@
+            <h1>Welcome to the build a box workshop</h1>
+            <h2>Step 1</h2>
+            <p>Select Your Layout</p>
+            <div>
+                <button>WASD</button>
+                <button>Straight 4</button>
+            </div>
+            <h2>Step 2</h2>
+            <p>Choose your colors</p>
+            <p>Shell-left color</p>
+            <p>Shell-middle color</p>
+            <p>Shell-right color</p>
+            <p>Choose your switches</p>
+            <h2>Step 3</h2>
+            <p>Add some color</p>
+ 
