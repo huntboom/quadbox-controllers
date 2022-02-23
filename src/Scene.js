@@ -15,7 +15,7 @@ export default function Scene() {
     <Canvas colorManagement camera={{position: [0,-70,-100],fov:70}}>
       <Suspense fallback={null}>
           <ambientLight intensity={0.5}/>
-          
+          <OrbitControls/>          
      <pointLight intensity={1.15} position={[0, 24, -100]} />
           <group position={[0, 0, 0]}>
           <CenterClip position={[-70,0,0]}/>

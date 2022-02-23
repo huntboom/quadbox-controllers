@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {useStore} from './store.js';

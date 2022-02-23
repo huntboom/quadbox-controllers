@@ -42,8 +42,10 @@
 .canvas {
     width:50em;
     margin-top:8em;
+    margin-left:35em;
+    margin-right:2em;
     height:25em;
-
+    position:fixed;
 }
 
 .partselecter {

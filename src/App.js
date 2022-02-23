@@ -91,7 +91,6 @@ function App() {
         <Header/>
         <HTMLOutside/>
         <Scene />
-        <Body/>
     </>
   );
 };
