@@ -84,13 +84,19 @@ function Scene() {
     </Canvas> 
   );
 }
-
+function SceneModifier() {
+    return(
+        <div className='SceneModifier'>
+            <Scene/>
+        </div>
+    )
+}
 function App() {
   return(
     <>
         <Header/>
         <HTMLOutside/>
-        <Scene />
+        <Scene/>
     </>
   );
 };

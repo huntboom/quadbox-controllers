@@ -8,8 +8,32 @@
     padding: 0;
     background-color: #030B16;
 }
+#paracord {
+    padding:1em;
+    transition: transform .2s;
+    border-radius:40%;
+    height:80px;
+    width:80px;
+}
+#paracord:hover {
+    transform: scale(2.5);
+}
+#switch {
+    padding:1em;
+    transition: transform .2s;
+    border-radius:40%;
+    height:80px;
+    width:80px;
+}
+#switch:hover {
+    transform: scale(2.5);
+}
+
 .shellColor {
     display:flex;
+}
+.headergap {
+    padding-top:5em;
 }
 .orangebutton {
     background-color:orange;
@@ -20,7 +44,7 @@
   background-color:lightgreen  
 }
 .yellowbutton {
-
+    background-color:yellow;
 }
 .whitebutton {
     background-color:white;
@@ -29,9 +53,16 @@
   background-color:red;
 }
 .purplebutton {
-    
+  background-color:purple;  
 }
+.paracordselector {
+  color:white;
+  display:flex;
+  margin-top:2em;
+  margin-left:2em;
+  width:40%;
 
+}
 .pinkbutton {
  
 }
@@ -64,7 +95,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius:100%;
+  border-radius:40%;
   height:80px;
   width:80px;
   font-size: 16px;
@@ -75,6 +106,8 @@ button {
     background-color:#45A29E;
     height:5em;
     justify-content:space-between;
+    position:fixed;
+    width:100%;
 }
 .menulogo {
     height:60px;
@@ -123,11 +156,16 @@ button {
     justify-content:center;
     padding-top:0px;
 }
+.SceneModifier {
+    width:100%;
+    height:100%;
+    position:fixed;
+}
 .motto {
     color:white;
     font-size:50px;
     font-family:"Open Sans",sans-serif;
     font-weight:700;
-
+    margin-top:2em;
 }
 
