@@ -20,7 +20,7 @@ import Header from './Header.js'
 import HTMLInside from './HTMLInside.js'
 
 
-const HTMLOutside = ({Header}) => {
+const HTMLOutside = () => {
     const changePink = useStore(state => state.changePink)
     const changeBlue= useStore(state => state.changeBlue)
   return(

@@ -6,13 +6,12 @@ export default function HTMLInside() {
   return(
       <Html center={true}  position={[0,55,0]}>
         <div className='overlayed'>
-  <Button style={{
-        borderRadius: 35,
+            <Button onClick={() =>window.appHistory.push("/customizer")} style={{ borderRadius: 25,
         fontweight:0,
         color:'black',
         backgroundColor: "white",
         boxshadow: '5px 10px',
-        padding: "18px 36px",
+        padding: "18px 56px",
         fontSize: "18px",
     }} variant='contained'>ORDER NOW</Button>
           </div>

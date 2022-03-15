@@ -8,11 +8,19 @@ import { BrowserRouter,
          Route
 } from "react-router-dom";
 import Customizer from "./routes/customizer";
+import { createBrowserHistory } from "history";
+
+const customHistory = createBrowserHistory({
+           
+});
 ReactDOM.render(
 <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter history={customHistory}>
         <Routes>
-            <Route path="/" element={<App/>}/> <Route path="customizer" element={<Customizer/>}/>
+            <Route path="/" component={({history}) => {window.appHistory = history;
+                return <App/>;
+            }}
+            element={<App/>}/> <Route path="customizer" element={<Customizer/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,
