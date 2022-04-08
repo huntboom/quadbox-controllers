@@ -1,8 +1,9 @@
 import React from "react";
 import create from 'zustand';
 export const useStore = create(set => ({ 
-    buttoncolor:"cyan",
-    color:"lightgreen",
+    buttoncolor:"#6EB5FF",
+    color:"#FD788B",
+    opacity:'opacity={0.9} transparent',
     changePink: () => set({ color:'#FD788B'}),
     changeBlue: () => set({ color:'#6EB5FF'}),
     changeGreen: () => set({ color:'lightgreen'}),
@@ -19,5 +20,8 @@ export const useStore = create(set => ({
     changeButtonRed: () => set({ buttoncolor:'red'}),
     changeButtonPurple: () => set({ buttoncolor:'purple'}),
     changeButtonOrange: () => set({ buttoncolor:'orange'}),
+    changeButtonClear: () => set({ opacity:'opacity={0.5} transparent'
+}),
+
 }))
 

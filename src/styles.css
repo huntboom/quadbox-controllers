@@ -1,12 +1,27 @@
   
   html,
-  body,
   #root {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #030B16;
+}
+a {
+    text-decoration:none;
+}
+.homepagecanvas {
+    width:100%;
+    height:30em;
+}
+.body {
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+}
+.order {
+    padding:0.1em;
 }
 #paracord {
     padding:1em;
@@ -100,7 +115,10 @@ button {
   width:80px;
   font-size: 16px;
 }
-
+.boxdetails {
+    font-size:0.75em;
+    padding:1em;
+}
 .header {
     display:flex;
     background-color:#45A29E;
@@ -108,6 +126,7 @@ button {
     justify-content:space-between;
     position:fixed;
     width:100%;
+    z-index:2;
 }
 .menulogo {
     height:60px;
@@ -136,20 +155,69 @@ button {
     font-size:2.5em;
 }
 .headerimg {
-    height:80px;
+    height:5em;
     padding-left:10px;
 }
 .overlayed {
     margin-top:30px;
+    z-index:0;
+}
+.orderbutton {
+    z-index:1;
+    position:absolute;
 }
 .instructions {
     color:white;
     display:grid;
     place-items:center;
-
+}
+.clearbutton {
+    align-items:center;
+    text-align:center;
+    background-color:white;
+    color:black;
+    padding:1em;
 }
 .spacing {
     padding-top:50px;
+}
+.container {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    color:white;
+    width:100%;
+}
+.raspberrypi0 {
+    height:498px;
+    width:898px;
+}
+.divider {
+    background-color:white;
+    width:90px;
+    height:5px;
+    position:50%;
+    margin:0 auto;
+    margin-top:.25em;
+    margin-bottom:.5em;
+}
+
+.feature {
+    padding:1em;
+    margin:0;
+    background-color:#1F2833;
+    height:448px;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.detailheading {
+    font-size:1.45em;
+}
+.details {
+    font-size:0.75em;
 }
 .body {
     display:flex;
@@ -161,11 +229,29 @@ button {
     height:100%;
     position:fixed;
 }
+.homepage {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding-top:2em;
+    align-items:center;
+}
+.ergonomics {
+    color:white;
+    justify-content:center;
+    height:50px;
+    align-items:center;
+    text-align:center;
+    font-size:1.5em;
+    padding-bottom:4em;
+}
+
 .motto {
     color:white;
     font-size:50px;
     font-family:"Open Sans",sans-serif;
     font-weight:700;
     margin-top:2em;
+    width:20em;
 }
 

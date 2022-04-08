@@ -19,21 +19,17 @@ import menulogo from './menu-three-horizontal-lines-symbol-text-baseball-bat-tea
 import Header from './Header.js'
 import HTMLInside from './HTMLInside.js'
 import ScenewithOrderNow from './ScenewithOrderNow.js';
-
+import Paracordselector from './routes/customizer.js';
+import Productdetails from './Productdetails.js';
+import Ordernowbutton from './Ordernowbutton.js';
 const HTMLOutside = () => {
   return(
       <div>
          <div className='body'>
-              <nav
-        style={{
-          paddingBottom: "1rem"
-        }}
-      >
-        <Link to="/customizer">Customizer</Link>
-      </nav>
-              <h2 className='motto'>
-                  CUSTOMIZATION UNDER YOUR CONTROL
+              <h2 className='motto'>CUSTOMIZATON UNDER YOUR CONTROL
               </h2>
+        <div className='order'>
+            </div>
           </div>
       </div>
   )
@@ -49,10 +45,19 @@ function SceneModifier() {
 
 export default function Landingpage() {
   return(
-      <div>
-        <Header/>
+      <>
+      <Header/>
+      <div className='homepage'>
         <HTMLOutside/>
-        <SceneModifier/>
+        <Ordernowbutton/>
+          <div className="homepagecanvas">
+        <ScenewithOrderNow/>
+          </div>
+       <Body/>
       </div>
+      <Productdetails/>
+    </>
   );
 };
+
+

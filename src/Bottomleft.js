@@ -4,8 +4,8 @@ import {useStore} from './store.js';
 import { useFrame } from '@react-three/fiber';
 
 
-export default function BottomRight(props) {
-  const { nodes, materials } = useGLTF('/Bottom_Right.gltf')
+export default function BottomLeft(props) {
+  const { nodes, materials } = useGLTF('/Bottom_Left.gltf')
   const buttoncolor = useStore(state => state.buttoncolor)
   return (
         <mesh {...props} geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} >
@@ -21,5 +21,5 @@ export default function BottomRight(props) {
   )
 }
 
-useGLTF.preload('/Bottom_Right.gltf')
+useGLTF.preload('/Bottom_Left.gltf')
 

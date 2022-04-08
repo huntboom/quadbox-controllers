@@ -29,6 +29,7 @@ function Partselecter() {
     const changeWhite= useStore(state => state.changeWhite)
     const changeOrange= useStore(state =>state.changeOrange)
     const changeYellow= useStore(state =>state.changeYellow)
+    const changeButtonClear= useStore(state =>state.changeButtonClear)
     return(
  <div className='headergap'>
     <div className='shellColor'>
@@ -43,6 +44,8 @@ function Partselecter() {
             <button id="colorbuttons"  onClick={changeOrange} className='orangebutton'></button>
             <button id="colorbuttons"  onClick={changeYellow} className='yellowbutton'></button>
             <button id="colorbuttons"  onClick={changePurple} className='purplebutton'></button>
+            <button id="colorbuttons"  onClick={changeButtonClear} className='clearbutton'>Clear</button>
+
         </div>
             <div className='canvas'>
             <Scene/>       
@@ -76,7 +79,7 @@ function ButtonSelector() {
     </div>
     )
 }
-function Paracordselector() {
+export function Paracordselector() {
     return(
             <div className="shellColor">
                 <div className="partselecter">
@@ -105,7 +108,7 @@ function Paracordselector() {
     )
 }
 
-function SwitchSelector() {
+export function SwitchSelector() {
     return(
             <div className="shellColor">
                 <div className="partselecter">

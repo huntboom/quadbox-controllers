@@ -3,37 +3,17 @@ import Button from '@mui/material/Button';
 import { useState } from 'react';
 import create from 'zustand';
 import {useStore} from './store.js';
-
+import raspberrypi0 from './thumb.jpg';
 export default function Body() {
-    const [frameColor,setColor] = useState("green");
-    const side1color = useStore(state => state.color)
-   return(
-        <div className='instructions'> 
-          <button className='ordernow'>ORDER NOW</button>
-            <p className='instructions'>
-            Step One: Choose your frame.
-             </p>
-            <select name="selectList" id="selectList" onChange={(e)=>{
-                const selectedColor=e.target.value;
-                setColor(selectedColor)
-            }}>
-            <option value="green">Green</option>
-              <option value="blue">Blue</option>
-            <option value="black">Black</option>
-            </select>
-            {frameColor}
-            <p className='instructions'>
-                Step Two: Choose your flight controller
-            </p>
-        <Button style={{
-        borderRadius: 35,
-        backgroundColor: "#21b6ae",
-        padding: "18px 36px",
-        fontSize: "18px"
-    }} variant='contained'>GET STARTED</Button>
-            {console.log({frameColor})}
-            {frameColor}
-   </div>
+   return( 
+       <div className="homepagebody">
+           <div className="divider"></div>
+      <div className='ergonomics'>
+          <h2 className="bodyheading">Ergonomic control in style</h2>
+          <p className="boxdetails">The quadbox brings the most advance hardware and features in a sleek form factor. Designed for smash bros.
+          </p>
+       </div>
+           </div>
     );
 };
 

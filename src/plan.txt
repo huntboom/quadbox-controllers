@@ -55,4 +55,6 @@ Have a component built that shows the final price with the prices of each piece 
 
 Okay so new plan, rather than having a landing page and several other pages, I'll start with one page to avoid having to use react router for now. 
 
+Get the frontpage made, get the customizer page made, and then finally a checkout page made and get it hosted. GO.
+
 
