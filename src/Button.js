@@ -4,7 +4,7 @@ import {useStore} from './store.js';
 import { useFrame } from '@react-three/fiber';
 
 export default function ButtonRounded(props) {
-
+    const clearness = useStore(state => state.clearness)
   const buttoncolor = useStore(state => state.buttoncolor)
   const { nodes, materials } = useGLTF('/buttonrounded.gltf')
     return (
@@ -12,7 +12,9 @@ export default function ButtonRounded(props) {
           <meshStandardMaterial
               attach="material"
               color={buttoncolor}
-              //opacity={0.5} transparent
+              opacity={clearness} transparent
+             // opacity={0.2} {transparent}
+             // opacity={0.2} transparent
           />
         </mesh>
 

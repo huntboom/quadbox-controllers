@@ -174,9 +174,12 @@ button {
 .clearbutton {
     align-items:center;
     text-align:center;
-    background-color:white;
+    justify-content:center;
     color:black;
+    display:flex;
     padding:1em;
+    background: linear-gradient(gray,lightgray );
+    opacity:0.4;
 }
 .spacing {
     padding-top:50px;

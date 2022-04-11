@@ -6,13 +6,15 @@ import { useFrame } from '@react-three/fiber';
 
 export default function BottomRight(props) {
   const { nodes, materials } = useGLTF('/Bottom_Right.gltf')
-  const buttoncolor = useStore(state => state.buttoncolor)
+  const shellcolor = useStore(state => state.color)
+  const clearnessshell = useStore(state =>state.clearnessshell)
   return (
         <mesh {...props} geometry={nodes.mesh_0.geometry} material={nodes.mesh_0.material} >
 
           <meshStandardMaterial
               attach="material"
-              color={buttoncolor}
+              color={shellcolor}
+              opacity={clearnessshell} transparent
           />
         </mesh>
       //to make transparent add:

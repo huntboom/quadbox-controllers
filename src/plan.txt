@@ -57,4 +57,21 @@ Okay so new plan, rather than having a landing page and several other pages, I'l
 
 Get the frontpage made, get the customizer page made, and then finally a checkout page made and get it hosted. GO.
 
+I finally got the order now button to work. 
+
+Okay so here's my plan: add all the colors from the colorshot group I saw on homedepots site and try and find their spray paint equivalent.
+
+Add a clear toggle.
+
+Add a drop down to the header component. 
+
+Add a checkout page. 
+
+Get the backend sorted. Get it hosted.
+
+Okay so I need to add a kailh switch to the box models, It has three parts, a colored switch connector, a clear top, and a black bottom. I will need to get a model for all three parts. Then I will have to put them in their own group file after positioning them correctly. 
+
+I'll also need a raspberry pi pico switch added. 
+
+OKAY 
 

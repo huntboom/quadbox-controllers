@@ -29,7 +29,7 @@ function Partselecter() {
     const changeWhite= useStore(state => state.changeWhite)
     const changeOrange= useStore(state =>state.changeOrange)
     const changeYellow= useStore(state =>state.changeYellow)
-    const changeButtonClear= useStore(state =>state.changeButtonClear)
+    const changeClear= useStore(state =>state.changeClear)
     return(
  <div className='headergap'>
     <div className='shellColor'>
@@ -44,7 +44,7 @@ function Partselecter() {
             <button id="colorbuttons"  onClick={changeOrange} className='orangebutton'></button>
             <button id="colorbuttons"  onClick={changeYellow} className='yellowbutton'></button>
             <button id="colorbuttons"  onClick={changePurple} className='purplebutton'></button>
-            <button id="colorbuttons"  onClick={changeButtonClear} className='clearbutton'>Clear</button>
+            <button id="colorbuttons"  onClick={changeClear} className='clearbutton'><p>Clear</p></button>
 
         </div>
             <div className='canvas'>
@@ -63,6 +63,7 @@ function ButtonSelector() {
     const changeButtonWhite= useStore(state => state.changeButtonWhite)
     const changeButtonOrange= useStore(state =>state.changeButtonOrange)
     const changeButtonYellow= useStore(state =>state.changeButtonYellow)
+    const changeButtonClear= useStore(state =>state.changeButtonClear)
     return(
     <div className='shellColor'>
         <div className='partselecter'>
@@ -74,6 +75,7 @@ function ButtonSelector() {
             <button id="colorbuttons"  onClick={changeButtonWhite} className='whitebutton'></button>
             <button id="colorbuttons"  onClick={changeButtonOrange} className='orangebutton'></button><button id="colorbuttons"  onClick={changeButtonYellow} className='yellowbutton'></button>
             <button id="colorbuttons"  onClick={changeButtonPurple} className='purplebutton'></button>
+            <button id="colorbuttons"  onClick={changeButtonClear} className='clearbutton'><p>Clear</p></button>
 
         </div>
     </div>
