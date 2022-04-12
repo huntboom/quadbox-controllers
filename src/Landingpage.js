@@ -49,10 +49,10 @@ export default function Landingpage() {
       <Header/>
       <div className='homepage'>
         <HTMLOutside/>
-        <Ordernowbutton/>
           <div className="homepagecanvas">
         <ScenewithOrderNow/>
           </div>
+          <Ordernowbutton/>
        <Body/>
       </div>
       <Productdetails/>

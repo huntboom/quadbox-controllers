@@ -11,6 +11,7 @@ import Body from './Body.js';
 import HTMLInside from './HTMLInside.js';
 import React, { useRef } from 'react';
 import Group from './Group.js';
+import Switch from './Switch.js';
 export default function ScenewithOrderNow() {
  return(
      <div className="homepagecanvas">

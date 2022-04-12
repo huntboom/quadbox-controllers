@@ -23,7 +23,7 @@ export const useStore = create(set => ({
     changeButtonRed: () => set({ buttoncolor:'red', clearness:1.0}),
     changeButtonPurple: () => set({ buttoncolor:'purple', clearness:1.0}),
     changeButtonOrange: () => set({ buttoncolor:'orange', clearness:1.0}),
-    changeButtonClear: () => set({ buttoncolor:'grey',clearness:0.5}),
+    changeButtonClear: () => set({ buttoncolor:'grey',clearness:0.2}),
 
 }))
 
