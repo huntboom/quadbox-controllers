@@ -14,8 +14,8 @@ export default function Group() {
   const group = useRef();
   useFrame(() => {
     // rotating the group instead of the mesh
-    group.current.rotation.y += Math.PI / 1000
-    group.current.rotation.x += Math.PI / 2000
+    group.current.rotation.y += Math.PI / 2000
+    group.current.rotation.x += Math.PI / 3000
   }) 
   return(
       <group position={[0,0,0]} ref={group}>
