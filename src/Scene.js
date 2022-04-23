@@ -15,6 +15,8 @@ import Bottomright from './BottomRight.js';
 import Bottomleft from './Bottomleft.js';
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
+import Model from './Pico.js';
+
 export default function Scene() {
   const group = useRef();
   
@@ -26,6 +28,7 @@ export default function Scene() {
           <group position={[0, 0, 0]}>
           <OrbitControls/>
           <Bottomleft position={[-7,0,30]}/>
+              <Model position={[-2,130,10]} scale={[4.5,4.5,4.5]} rotation={[Math.PI / -2,4.725,0]} />
           <Bottomright position={[-7,0,30]}/>
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53.5,60,0]} />
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-1,98,0]} />

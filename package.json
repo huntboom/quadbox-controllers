@@ -1,7 +1,6 @@
 {
   "name": "drone-parts-planner",
   "version": "0.1.0",
-  "homepage": "https://huntboom.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.9",

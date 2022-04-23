@@ -9,6 +9,7 @@ import Side2 from './Side2.js';
 import HTMLInside from './HTMLInside.js';
 import Bottomright from './BottomRight.js';
 import Bottomleft from './Bottomleft.js';
+import Model from './Pico.js';
 
 export default function Group() {
   const group = useRef();
@@ -24,6 +25,7 @@ export default function Group() {
           <CenterClip position={[-70,0,0]}/>
           <Side1 position={[-70,0,0]}/>
           <Side2 position={[-70,0,0]}/>
+          <Model position={[-2,130,10]} scale={[4.5,4.5,4.5]} rotation={[Math.PI / -2,4.725,0]} />
               <ButtonRounded position={[23,94,4]}/>
               <ButtonRounded position={[129.5,143,4]}/>
               <ButtonRounded position={[183,102,4]}/>

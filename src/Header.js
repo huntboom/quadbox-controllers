@@ -3,17 +3,30 @@ import menulogo from './menu-three-horizontal-lines-symbol-text-baseball-bat-tea
 import controllerlogo from './controllerupgrade.png';
 import shoppingcartlogo from './shoppingcart.png';
 import { Link,Outlet } from "react-router-dom"; 
+import { Navbar } from './Navbar.js';
+
 
 export default function Header() {
+
+function Navbar() {
+
+
+return(
+    <div className="dropdown"></div>
+)
+}
+
+const navbardropdown = Navbar()
+
+
 
 return(
 <div className='all'>
           <div className='header'>
-          <img className='menulogo' src={menulogo}/>
-              <div className='Title'>
-                  <Link to="/customizer">
+         <Link to="/customizer">
           <img className='headerimg' src={controllerlogo}/>
-                  </Link>
+         </Link>
+              <div className='Title'>
                   <Link to="/">
           <h1 className='headertitle'>QUADBOX CUSTOMS</h1>
                   </Link> 

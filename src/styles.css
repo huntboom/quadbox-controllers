@@ -128,10 +128,18 @@ button {
     width:100%;
     z-index:2;
 }
+.dropdown {
+    color:white;
+    width:20%;
+    height:10em;
+    background-color:white;
+
+}
+
 .menulogo {
-    height:60px;
+    height:3em;
     padding-left:40px;
-    padding-top:10px;
+    padding-top:1em;
 }
 .Title {
     display:flex;
@@ -150,13 +158,13 @@ button {
     font: sans-serif;
     margin-top:20px;
     padding-top:0px;
-    padding-left:20px;
+    padding-right:90px;
     justify-content:center;
     font-size:2.5em;
 }
 .headerimg {
     height:5em;
-    padding-left:10px;
+    padding-left:25px;
 }
 .overlayed {
     margin-top:30px;
