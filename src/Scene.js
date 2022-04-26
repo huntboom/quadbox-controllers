@@ -16,7 +16,8 @@ import Bottomleft from './Bottomleft.js';
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import Model from './Pico.js';
-
+import Switchbottom from './Switch_bottom.js';
+import Switchmiddle from './Switch_middle.js';
 export default function Scene() {
   const group = useRef();
   
@@ -32,7 +33,8 @@ export default function Scene() {
           <Bottomright position={[-7,0,30]}/>
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53.5,60,0]} />
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-1,98,0]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
+              <Switchbottom scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
+              <Switchmiddle scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[159,106,0]} />
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-134,122,0]} />
               <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />

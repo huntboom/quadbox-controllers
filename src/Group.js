@@ -10,7 +10,8 @@ import HTMLInside from './HTMLInside.js';
 import Bottomright from './BottomRight.js';
 import Bottomleft from './Bottomleft.js';
 import Model from './Pico.js';
-
+import Switchbottom from './Switch_bottom.js';
+import Switchworking from './Switchworking.js';
 export default function Group() {
   const group = useRef();
   useFrame(() => {
@@ -25,7 +26,20 @@ export default function Group() {
           <CenterClip position={[-70,0,0]}/>
           <Side1 position={[-70,0,0]}/>
           <Side2 position={[-70,0,0]}/>
-          <Model position={[-2,130,10]} scale={[4.5,4.5,4.5]} rotation={[Math.PI / -2,4.725,0]} />
+          <Model position={[-2,130,10]} scale={[4.5,4.5,4.5]} rotation={[Math.PI / -2,4.725,0]} /> 
+          <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53.5,60,0]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-1,98,0]} />
+              <Switchbottom scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[159,106,0]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-134,122,0]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
+ 
               <ButtonRounded position={[23,94,4]}/>
               <ButtonRounded position={[129.5,143,4]}/>
               <ButtonRounded position={[183,102,4]}/>
