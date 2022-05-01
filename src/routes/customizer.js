@@ -111,18 +111,27 @@ export function Paracordselector() {
 }
 
 export function SwitchSelector() {
+    const changeSwitchPink = useStore(state => state.changeSwitchPink)
+    const changeSwitchBrown= useStore(state => state.changeSwitchBrown) 
+    const changeSwitchCyan= useStore(state => state.changeSwitchCyan)
+    const changeSwitchRed= useStore(state => state.changeSwitchRed)
+    const changeSwitchPurple= useStore(state => state.changeSwitchPurple)
+    const changeSwitchBurgundy= useStore(state => state.changeSwitchBurgundy)
+    const changeSwitchOrange= useStore(state =>state.changeSwitchOrange)
+    const changeSwitchYellow= useStore(state =>state.changeSwitchYellow)
+    const changeSwitchSilver= useStore(state =>state.changeSwitchSilver)
     return(
             <div className="shellColor">
                 <div className="partselecter">
                     <h2>Step 4: Choose Your Hot-Swappable Kailh Switches</h2>
-                    <img id="switch" src={purpleswitch}></img>                   
-                    <img id="switch" src={yellowswitch}></img>                   
-                    <img id="switch" src={silverswitch}></img>                   
-                    <img id="switch" src={bronzeswitch}></img>                   
-                    <img id="switch" src={burgundyswitch}></img>                   
-                    <img id="switch" src={lightgreenswitch}></img>                   
-                    <img id="switch" src={brownswitch}></img>                   
-                    <img id="switch" src={pinkswitch}></img>
+                    <img id="switch" src={purpleswitch} onClick={changeSwitchPurple}></img>                   
+                    <img id="switch" src={yellowswitch} onClick={changeSwitchYellow}></img>                   
+                    <img id="switch" src={silverswitch} onClick={changeSwitchSilver}></img>                   
+                    <img id="switch" src={bronzeswitch} onClick={changeSwitchOrange}></img>                   
+                    <img id="switch" src={burgundyswitch} onClick={changeSwitchBurgundy}></img>                   
+                    <img id="switch" src={lightgreenswitch} onClick={changeSwitchCyan}></img>                   
+                    <img id="switch" src={brownswitch} onClick={changeSwitchBrown}></img>                   
+                    <img id="switch" src={pinkswitch} onClick={changeSwitchPink}></img>
                 <div className='checkbox'>
                     <FormControlLabel control={<Checkbox defaultChecked 
                     sx={{
