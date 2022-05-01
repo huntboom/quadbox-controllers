@@ -12,7 +12,8 @@ export default function ButtonRounded(props) {
           <meshStandardMaterial
               attach="material"
               color={buttoncolor}
-              opacity={clearness} transparent
+              opacity={clearness} transparent 
+              
              // opacity={0.2} {transparent}
              // opacity={0.2} transparent
           />

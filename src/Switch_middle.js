@@ -11,7 +11,12 @@ export default function Switchmiddle(props) {
         receiveShadow
         geometry={nodes['"switch_middle"'].geometry}
         material={nodes['"switch_middle"'].material}
+      >
+       <meshStandardMaterial
+           attach="material"
+           color="black"
       />
+       </mesh>
     </group>
   );
 }

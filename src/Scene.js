@@ -18,6 +18,7 @@ import { useFrame } from '@react-three/fiber';
 import Model from './Pico.js';
 import Switchbottom from './Switch_bottom.js';
 import Switchmiddle from './Switch_middle.js';
+import Switchgroup from './Switchgroup.js';
 export default function Scene() {
   const group = useRef();
   
@@ -27,52 +28,39 @@ export default function Scene() {
           <ambientLight intensity={0.5}/>
      <pointLight intensity={1.15} position={[0, 24, -100]} />
           <group position={[0, 0, 0]}>
-          <OrbitControls/>
+              <OrbitControls/>
           <Bottomleft position={[-7,0,30]}/>
               <Model position={[-2,130,10]} scale={[4.5,4.5,4.5]} rotation={[Math.PI / -2,4.725,0]} />
           <Bottomright position={[-7,0,30]}/>
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53.5,60,0]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-1,98,0]} />
-              <Switchbottom scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
-              <Switchmiddle scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[159,106,0]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-134,122,0]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-              <Switchworking scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[]} />
-          <CenterClip position={[-70,0,0]}/>
+         <CenterClip position={[-70,0,0]}/>
           <Side1 position={[-70,0,0]}/>
           <Side2 position={[-70,0,0]}/>
-              <ButtonRounded position={[23,94,4]}/>
-              <ButtonRounded position={[129.5,143,4]}/>
-              <ButtonRounded position={[183,102,4]}/>
-              <ButtonRounded position={[-110,118,4]}/>
-              
-              <ButtonRounded position={[-29.5,56,4]}/>
-              <ButtonRounded position={[-67,56,4]}/>
-              <ButtonRounded position={[-48,69,4]}/>
-              <ButtonRounded position={[-48,43,4]}/>
-              <ButtonRounded position={[-29,29,4]}/>
-              <ButtonRounded position={[-55,109,4]}/>
-              <ButtonRounded position={[-55,131,4]}/>
-              <ButtonRounded position={[-136,124.5,4]}/>
-              <ButtonRounded position={[-136,102.5,4]}/>
-              <ButtonRounded position={[-110,140,4]}/>
-              <ButtonRounded position={[-81.5,121,4]}/>
-              <ButtonRounded position={[-81.5,143,4]}/>
-              <ButtonRounded position={[77.5,29,4]}/>
-              <ButtonRounded position={[96.5,42,4]}/>
-              <ButtonRounded position={[158,118,4]}/>
-              <ButtonRounded position={[129.5,121,4]}/>
-              <ButtonRounded position={[103.5,109.5,4]}/>
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-1,98,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[159,106,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-134,122,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-134,144,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53.5,60,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-91,60,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-72,73,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-72,47,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-53,33,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-79,113,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-79,135,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-160,128.5,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-160,106.5,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-105.5,125,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[-105.4,147,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[53.5,33,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[72.5,46,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[134,122,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,125,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[105.5,147,0]} />
+              <Switchgroup scale={[0.7,0.7,0.7]} rotation={[Math.PI / 1,0,0]} position={[78.5,113.5,0]} />
+             //125.5,147,0  -53.5,60,0 -91,60,0 -72,73,0 -72,47,0 -53,33,0 -79,113,0 -79,135,0 -160,128.5,0 -134,106.5,0 -105.4,125,0 -105.4,147, 0 43.5,33,0 72.5,46,0 134,122,0 105.5,125,0 78.5, 113.5,0   
           </group>
       </Suspense>
       
-   /
+   
     </Canvas> 
   );
 }

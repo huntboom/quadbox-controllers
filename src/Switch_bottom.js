@@ -11,7 +11,13 @@ export default function Switchbottom(props) {
         receiveShadow
         geometry={nodes['"switch_bottom"'].geometry}
         material={nodes['"switch_bottom"'].material}
+      >
+        <meshStandardMaterial
+                attach="material"
+                color="grey"
+                opacity={0.5} transparent
       />
+      </mesh>
     </group>
   );
 }
