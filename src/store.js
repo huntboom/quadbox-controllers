@@ -24,6 +24,10 @@ export const useStore = create(set => ({
     changePurple: () => set({ color:'purple',clearnessshell:1.0}),
     changeOrange: () => set({ color:'orange',clearnessshell:1.0}),
     changeClear: () => set({ color:'grey',clearnessshell:0.5}),
+    changeLightPurple: () => set({ color:'#B19CD8',clearnessshell:1.0}),
+    changeDarkGreen: () => set({ color:'green',clearnessshell:1.0}),
+    changeDarkBlue: () => set({ color:'blue',clearnessshell:1.0}),
+    changeGold: () => set({ color:'gold',clearnessshell:1.0}),
 
     changeButtonPink: () => set({ buttoncolor:'#FD788B', clearness:1.0}),
     changeButtonBlue: () => set({ buttoncolor:'#6EB5FF', clearness:1.0}),
@@ -33,6 +37,10 @@ export const useStore = create(set => ({
     changeButtonRed: () => set({ buttoncolor:'red', clearness:1.0}),
     changeButtonPurple: () => set({ buttoncolor:'purple', clearness:1.0}),
     changeButtonOrange: () => set({ buttoncolor:'orange', clearness:1.0}),
+    changeButtonGold: () => set({ buttoncolor:'gold', clearness:1.0}),
+    changeButtonDarkBlue: () => set({ buttoncolor:'blue', clearness:1.0}),
+    changeButtonDarkGreen: () => set({ buttoncolor:'green', clearness:1.0}),
+    changeButtonLightPurple: () => set({ buttoncolor:'#B19CD8', clearness:1.0}),
     changeButtonClear: () => set({ buttoncolor:'grey',clearness:0.2}),
 
 }))

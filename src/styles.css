@@ -10,6 +10,18 @@
 a {
     text-decoration:none;
 }
+#kailhinfo{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+#kailhchart {
+    width:90%
+}
 .homepagecanvas {
     width:100%;
     height:30em;
@@ -53,6 +65,21 @@ a {
 .orangebutton {
     background-color:orange;
 }
+.darkgreen {
+    background-color:green;
+}
+.darkblue {
+    background-color:blue;
+}
+.lightpurple {
+    background-color:#B19CD8;
+}
+.silverbutton {
+
+}
+.bronzebutton {
+
+}
 .bluebutton {
   background-color:#6EB5FF;  }
 .greenbutton {
@@ -85,6 +112,17 @@ a {
     padding:2em;   
     margin:1em;
 }
+.goldbutton {
+    background: url('./gold.png') no-repeat top left;
+}
+.silverbutton {
+    background: url('./silver.png') no-repeat top left;
+} 
+.bronzebutton {
+    background: url('./bronze.png') no-repeat top left;
+}
+
+
 .canvas {
     width:50em;
     margin-top:8em;
@@ -180,11 +218,9 @@ button {
     place-items:center;
 }
 .clearbutton {
-    align-items:center;
     text-align:center;
     justify-content:center;
     color:black;
-    display:flex;
     padding:1em;
     background: linear-gradient(gray,lightgray );
     opacity:0.4;

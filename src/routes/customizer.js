@@ -19,7 +19,8 @@ import bronzeswitch from '../bronzeswitch.jpg';
 import pinkswitch from '../pinkswitch.jpg';
 import silverswitch from '../silverswitch.jpg';
 import yellowswitch from '../yellowswitch.jpg';
-
+import kailhchart from '../kailhchart.jpeg';
+import gold from '../gold.png';
 function Partselecter() {
     const changePink = useStore(state => state.changePink)
     const changeBlue= useStore(state => state.changeBlue)
@@ -29,7 +30,15 @@ function Partselecter() {
     const changeWhite= useStore(state => state.changeWhite)
     const changeOrange= useStore(state =>state.changeOrange)
     const changeYellow= useStore(state =>state.changeYellow)
+    const changeLightPurple= useStore(state =>state.changeLightPurple)
+    const changeDarkBlue= useStore(state =>state.changeDarkBlue)
+    const changeDarkGreen= useStore(state =>state.changeDarkGreen)
     const changeClear= useStore(state =>state.changeClear)
+
+//<button id="colorbuttons" onClick={changeClear}  className='goldbutton'></button>
+//<button id="colorbuttons"  onClick={changeClear} className='silverbutton'></button>
+//<button id="colorbuttons"  onClick={changeClear} className='bronzebutton'></button>
+//Add dark blue, dark green and light purple for now until I get the above working. 
     return(
  <div className='headergap'>
     <div className='shellColor'>
@@ -43,10 +52,14 @@ function Partselecter() {
             <button id="colorbuttons"  onClick={changeWhite} className='whitebutton'></button>
             <button id="colorbuttons"  onClick={changeOrange} className='orangebutton'></button>
             <button id="colorbuttons"  onClick={changeYellow} className='yellowbutton'></button>
-            <button id="colorbuttons"  onClick={changePurple} className='purplebutton'></button>
-            <button id="colorbuttons"  onClick={changeClear} className='clearbutton'><p>Clear</p></button>
-
+            <button id="colorbuttons"  onClick={changePurple} className='purplebutton'></button> 
+            <button id="colorbuttons"  onClick={changeDarkBlue} className='darkblue'></button> 
+            <button id="colorbuttons"  onClick={changeDarkGreen} className='darkgreen'></button>
+            <button id="colorbuttons"  onClick={changeLightPurple} className='lightpurple'></button>
+            <button id="colorbuttons"  onClick={changeClear} className='clearbutton'>Clear</button> 
+            
         </div>
+        
             <div className='canvas'>
             <Scene/>       
         </div>
@@ -63,19 +76,27 @@ function ButtonSelector() {
     const changeButtonWhite= useStore(state => state.changeButtonWhite)
     const changeButtonOrange= useStore(state =>state.changeButtonOrange)
     const changeButtonYellow= useStore(state =>state.changeButtonYellow)
+    const changeButtonDarkBlue= useStore(state =>state.changeButtonDarkBlue)
+    const changeButtonDarkGreen= useStore(state =>state.changeButtonDarkGreen)
+    const changeButtonLightPurple= useStore(state =>state.changeButtonLightPurple)
     const changeButtonClear= useStore(state =>state.changeButtonClear)
     return(
     <div className='shellColor'>
         <div className='partselecter'>
-            <h2>Step 2: Choose Your Quadbox Button Colors</h2>                
+            <h2>Step 2: Choose Your Quadbox Button Colors</h2>
             <button id="colorbuttons" onClick={changeButtonGreen} className='greenbutton'></button> 
             <button id="colorbuttons" onClick={changeButtonPink} className='pinkbutton'></button> 
             <button id="colorbuttons" onClick={changeButtonBlue} className='bluebutton'></button>
             <button id="colorbuttons"  onClick={changeButtonRed} className='redbutton'></button>
             <button id="colorbuttons"  onClick={changeButtonWhite} className='whitebutton'></button>
-            <button id="colorbuttons"  onClick={changeButtonOrange} className='orangebutton'></button><button id="colorbuttons"  onClick={changeButtonYellow} className='yellowbutton'></button>
-            <button id="colorbuttons"  onClick={changeButtonPurple} className='purplebutton'></button>
-            <button id="colorbuttons"  onClick={changeButtonClear} className='clearbutton'><p>Clear</p></button>
+            <button id="colorbuttons"  onClick={changeButtonOrange} className='orangebutton'></button>
+            <button id="colorbuttons"  onClick={changeButtonYellow} className='yellowbutton'></button>
+            <button id="colorbuttons"  onClick={changeButtonPurple} className='purplebutton'></button> 
+            <button id="colorbuttons"  onClick={changeButtonDarkBlue} className='darkblue'></button> 
+            <button id="colorbuttons"  onClick={changeButtonDarkGreen} className='darkgreen'></button>
+            <button id="colorbuttons"  onClick={changeButtonLightPurple} className='lightpurple'></button>
+            <button id="colorbuttons"  onClick={changeButtonClear} className='clearbutton'>Clear</button> 
+            
 
         </div>
     </div>
@@ -140,6 +161,19 @@ export function SwitchSelector() {
                         color: '#d81b60',
                     },
                       }} />} label="I would like an additional set of switches (+$3.00)" />
+                    <div id="kailhinfo">
+                    <select name="additionalset"id="additionalset">
+                        <option value="none">Select Your Switch</option>
+                        <option value="yellow">Yellow Switches</option>
+                        <option value="brown">Brown Switches</option>
+                        <option value="pink">Pink Switches</option>
+                        <option value="cyan">Cyan Switches</option>
+                        <option value="burgundy">Burgundy Switches</option>
+                        <option value="purple">Purple Switches</option>
+                    </select>
+                    <img src={kailhchart} id="kailhchart"/>
+                    <a href="https://www.keychron.com/blogs/news/kailh-mechanical-switch-guide">For more information on kailh switches click here</a>  
+                    </div>
                 </div> 
                 </div>
             </div>
