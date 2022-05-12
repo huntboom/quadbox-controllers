@@ -20,7 +20,9 @@ a {
     padding-bottom:0.5em;
 }
 #kailhchart {
-    width:90%
+    width:90%;
+    padding:2em;
+    margin-right:2em;
 }
 .homepagecanvas {
     width:100%;
@@ -59,8 +61,25 @@ a {
 .shellColor {
     display:flex;
 }
+.checkoutcontainer {
+    display:flex;
+    align-items:center;
+    width:100%;
+
+
+}
+.emptycart {
+    color:white;
+    margin-top:4em;
+}
 .headergap {
-    padding-top:5em;
+    padding-top:4em;
+    display:flex;
+    align-items:center;
+    width:100%;
+    justify-content:center;
+    color:white;
+    flex-direction:column;
 }
 .orangebutton {
     background-color:orange;
@@ -182,10 +201,25 @@ button {
 .Title {
     display:flex;
 }
-    
+.buttontext {
+    padding:0.5em;
 
+}
+.kailhlink {
+    padding-bottom:1em;
+}
+.checkoutbutton {
+    borderRadius: 25;
+    fontweight:0;
+    color:'black';
+    backgroundColor: "white";
+    boxshadow: '5px 10px';
+    padding: "15px 176px";
+    fontSize: "15px";
+    word-wrap:"break-word";
+}
 .shoppingcart {
-    height:60px;
+    height:4em;
     padding-right:40px;
     padding-top:10px;
 }

@@ -21,6 +21,11 @@ import silverswitch from '../silverswitch.jpg';
 import yellowswitch from '../yellowswitch.jpg';
 import kailhchart from '../kailhchart.jpeg';
 import gold from '../gold.png';
+import Button from '@mui/material/Button';
+import { createContext } from 'react';
+import shoppingcartlogo from '../shoppingcart.png';
+import { Link,Outlet } from "react-router-dom"; 
+
 function Partselecter() {
     const changePink = useStore(state => state.changePink)
     const changeBlue= useStore(state => state.changeBlue)
@@ -34,7 +39,8 @@ function Partselecter() {
     const changeDarkBlue= useStore(state =>state.changeDarkBlue)
     const changeDarkGreen= useStore(state =>state.changeDarkGreen)
     const changeClear= useStore(state =>state.changeClear)
-
+    const offsetContext=createContext(0)
+    const logTest=console.log(offsetContext.Provider)
 //<button id="colorbuttons" onClick={changeClear}  className='goldbutton'></button>
 //<button id="colorbuttons"  onClick={changeClear} className='silverbutton'></button>
 //<button id="colorbuttons"  onClick={changeClear} className='bronzebutton'></button>
@@ -45,7 +51,7 @@ function Partselecter() {
         <div className='partselecter'>
          <h1>Welcome to the build a box workshop</h1>
             <h2>Step 1: Choose Your Quadbox Shell Colors</h2>                
-            <button id="colorbuttons" onClick={changeGreen} className='greenbutton'></button> 
+            <button id="colorbuttons" onClick={logTest} className='greenbutton'></button> 
             <button id="colorbuttons" onClick={changePink} className='pinkbutton'></button> 
             <button id="colorbuttons" onClick={changeBlue} className='bluebutton'></button>
             <button id="colorbuttons"  onClick={changeRed} className='redbutton'></button>
@@ -130,7 +136,13 @@ export function Paracordselector() {
             </div>
     )
 }
+function check() {
+    document.getElementById("myCheck").checked = true;
+}
 
+function uncheck() {
+    document.getElementById("myCheck").checked = false;
+}
 export function SwitchSelector() {
     const changeSwitchPink = useStore(state => state.changeSwitchPink)
     const changeSwitchBrown= useStore(state => state.changeSwitchBrown) 
@@ -160,7 +172,7 @@ export function SwitchSelector() {
                         '&.Mui-checked': {
                         color: '#d81b60',
                     },
-                      }} />} label="I would like an additional set of switches (+$3.00)" />
+                      }} />}  label="I would like an additional set of switches (+$3.00)" />
                     <div id="kailhinfo">
                     <select name="additionalset"id="additionalset">
                         <option value="none">Select Your Switch</option>
@@ -172,7 +184,36 @@ export function SwitchSelector() {
                         <option value="purple">Purple Switches</option>
                     </select>
                     <img src={kailhchart} id="kailhchart"/>
-                    <a href="https://www.keychron.com/blogs/news/kailh-mechanical-switch-guide">For more information on kailh switches click here</a>  
+                    <p>Click to open expanded view</p>
+                    <a className="kailhlink" href="https://www.keychron.com/blogs/news/kailh-mechanical-switch-guide">For more information on kailh switches click here</a>  
+        <h2>Cart Subtotal:</h2>
+        <Link to="/checkout">
+        <Button style={{ borderRadius: 25,
+        fontweight:0,
+        color:'black',
+        backgroundColor: "white",
+        boxshadow: '5px 10px',
+        padding: "15px 156px",
+        fontSize: "15px",
+        wordwrap:"break-word",
+        whitespace:"normal",
+        display:"flex",
+        flexdirection:"row",
+        }} variant='contained'> <img className="shoppingcart" src={shoppingcartlogo}/><span className="buttontext">Add</span><span className="buttontext">to</span><span className="buttontext">Cart</span></Button>
+        </Link>
+        <Button style={{ borderRadius: 25,
+        fontweight:0,
+        color:'black',
+        backgroundColor: "pink",
+        boxshadow: '5px 10px',
+        padding: "15px 156px",
+        fontSize: "15px",
+        wordwrap:"break-word",
+        whitespace:"normal",
+        display:"flex",
+        flexdirection:"row",
+        }} variant='contained'> <span className="buttontext">Proceed</span><span className="buttontext">to</span><span className="buttontext">Checkout</span></Button>
+
                     </div>
                 </div> 
                 </div>

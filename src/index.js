@@ -9,6 +9,7 @@ import { BrowserRouter,
 } from "react-router-dom";
 import Customizer from "./routes/customizer";
 import { createBrowserHistory } from "history";
+import Checkout from "./routes/checkout";
 
 const customHistory = createBrowserHistory({
            
@@ -20,7 +21,9 @@ ReactDOM.render(
             <Route path="/" component={({history}) => {window.appHistory = history;
                 return <App/>;
             }}
-            element={<App/>}/> <Route path="customizer" element={<Customizer/>}/>
+            element={<App/>}/>
+            <Route path="customizer" element={<Customizer/>}/>
+            <Route path="checkout" element={<Checkout/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>,

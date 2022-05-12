@@ -31,7 +31,9 @@ return(
           <h1 className='headertitle'>QUADBOX CUSTOMS</h1>
                   </Link> 
                   </div>
+              <Link to="/checkout">
           <img className='shoppingcart' src={shoppingcartlogo}/>
+              </Link>
     </div>
 </div>
 )
