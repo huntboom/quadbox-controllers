@@ -143,6 +143,9 @@ function check() {
 function uncheck() {
     document.getElementById("myCheck").checked = false;
 }
+
+
+
 export function SwitchSelector() {
     const changeSwitchPink = useStore(state => state.changeSwitchPink)
     const changeSwitchBrown= useStore(state => state.changeSwitchBrown) 
@@ -183,7 +186,9 @@ export function SwitchSelector() {
                         <option value="burgundy">Burgundy Switches</option>
                         <option value="purple">Purple Switches</option>
                     </select>
+                    <label class="btn" for="btnControl">
                     <img src={kailhchart} id="kailhchart"/>
+                    </label>
                     <p>Click to open expanded view</p>
                     <a className="kailhlink" href="https://www.keychron.com/blogs/news/kailh-mechanical-switch-guide">For more information on kailh switches click here</a>  
         <h2>Cart Subtotal:</h2>
@@ -212,7 +217,7 @@ export function SwitchSelector() {
         whitespace:"normal",
         display:"flex",
         flexdirection:"row",
-        }} variant='contained'> <span className="buttontext">Proceed</span><span className="buttontext">to</span><span className="buttontext">Checkout</span></Button>
+        }} onClick={check} variant='contained'> <span className="buttontext">Proceed</span><span className="buttontext">to</span><span className="buttontext">Checkout</span></Button>
 
                     </div>
                 </div> 

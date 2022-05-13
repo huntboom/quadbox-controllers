@@ -6,7 +6,21 @@ import Button from '@mui/material/Button';
 import { createContext } from 'react';
 import shoppingcartlogo from '../shoppingcart.png';
 import { Link,Outlet } from "react-router-dom"; 
-   
+ 
+
+function CartFull() {
+    return(
+        <div>
+            <input>
+                <h3>
+                    Contact Information
+                </h3>
+                
+
+            </input>
+        </div>
+    )
+}
 function Cart() {
     const store = useStore(state => state.color)
 return(
