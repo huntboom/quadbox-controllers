@@ -5,7 +5,7 @@ import CenterClip from './CenterClip.js';
 import Side2 from './Side2.js';
 import BottomRight from './BottomRight';
 import { Suspense } from 'react';
-import { ScrollControls,useScroll,Html,OrbitControls} from '@react-three/drei';
+import { Html,OrbitControls} from '@react-three/drei';
 import { Light } from 'three';
 import Body from './Body.js';
 import HTMLInside from './HTMLInside.js'; 

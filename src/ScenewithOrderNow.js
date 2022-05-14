@@ -12,17 +12,15 @@ import HTMLInside from './HTMLInside.js';
 import React, { useRef } from 'react';
 import Group from './Group.js';
 import Switch from './Switch.js';
-import { ScrollControls, Sky, useScroll, useGLTF, useAnimations } from '@react-three/drei'
+import { Sky,useGLTF, useAnimations } from '@react-three/drei'
 export default function ScenewithOrderNow() {
  return(
      <div className="homepagecanvas">
     <Canvas colorManagement camera={{position: [0,-70,-100],fov:90}}>
       <Suspense fallback={null}>
-          <ScrollControls pages={4}>
           <ambientLight intensity={0.5}/>
      <pointLight intensity={1.15} position={[0, 24, -100]} />
           <Group/>
-          </ScrollControls>
       </Suspense>
     </Canvas>
     </div>
