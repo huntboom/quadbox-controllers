@@ -192,7 +192,7 @@ export function SwitchSelector() {
                     <p>Click to open expanded view</p>
                     <a className="kailhlink" href="https://www.keychron.com/blogs/news/kailh-mechanical-switch-guide">For more information on kailh switches click here</a>  
         <h2>Cart Subtotal:</h2>
-        <Link to="/checkout">
+        <div className="buttonContainer">
         <Button style={{ borderRadius: 25,
         fontweight:0,
         color:'black',
@@ -205,7 +205,8 @@ export function SwitchSelector() {
         display:"flex",
         flexdirection:"row",
         }} variant='contained'> <img className="shoppingcart" src={shoppingcartlogo}/><span className="buttontext">Add</span><span className="buttontext">to</span><span className="buttontext">Cart</span></Button>
-        </Link>
+        </div>
+        <Link to="/checkout">
         <Button style={{ borderRadius: 25,
         fontweight:0,
         color:'black',
@@ -217,8 +218,8 @@ export function SwitchSelector() {
         whitespace:"normal",
         display:"flex",
         flexdirection:"row",
-        }} onClick={check} variant='contained'> <span className="buttontext">Proceed</span><span className="buttontext">to</span><span className="buttontext">Checkout</span></Button>
-
+        }} variant='contained'> <span className="buttontext">Proceed</span><span className="buttontext">to</span><span className="buttontext">Checkout</span></Button>
+        </Link>
                     </div>
                 </div> 
                 </div>
